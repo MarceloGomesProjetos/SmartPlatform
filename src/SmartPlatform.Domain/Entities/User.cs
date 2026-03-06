@@ -3,15 +3,25 @@ using SmartPlatform.Domain.Events;
 
 namespace SmartPlatform.Domain.Entities;
 
-public class User : BaseEntity
+public class User : AggregateRoot
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; private set; }
 
-    public string Email { get; set; } = string.Empty;
-    public string Name { get; set; } = string.Empty;
+    public string Name { get; private set; } = null!;
 
-    public void Activate()
+    public string Email { get; private set; } = null!;
+
+    public static User Create(string name, string email)
     {
-        AddDomainEvent(new UserActivatedEvent(Id));
+        var user = new User
+        {
+            Id = Guid.NewGuid(),
+            Name = name,
+            Email = email
+        };
+
+        user.AddDomainEvent(new UserRegisteredEvent(user.Id, email));
+
+        return user;
     }
 }

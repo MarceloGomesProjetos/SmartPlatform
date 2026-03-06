@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartPlatform.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+085de48d2c8204605eb020567791d2ba4e6bf3d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4aaeb8f311832bc39d693916cf9433e82b4d120")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartPlatform.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartPlatform.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

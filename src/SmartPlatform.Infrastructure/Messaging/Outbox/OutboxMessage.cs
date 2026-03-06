@@ -10,6 +10,8 @@ public class OutboxMessage
 
     public string Content { get; set; } = string.Empty;
 
+    public string? Payload { get; set; }
+
     public DateTime? ProcessedOn { get; set; }
 
     public string? Error { get; set; }
