@@ -1,9 +1,11 @@
 <Solution>
-  <Project Path="SmartPlatform.AI/SmartPlatform.AI.csproj" />
-  <Project Path="SmartPlatform.Api/SmartPlatform.Api.csproj" />
-  <Project Path="SmartPlatform.Application/SmartPlatform.Application.csproj" />
-  <Project Path="SmartPlatform.Domain/SmartPlatform.Domain.csproj" />
-  <Project Path="SmartPlatform.Infrastructure/SmartPlatform.Infrastructure.csproj" />
-  <Project Path="SmartPlatform.Shared/SmartPlatform.Shared.csproj" />
-  <Project Path="SmartPlatform.Worker/SmartPlatform.Worker.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/SmartPlatform.AI/SmartPlatform.AI.csproj" />
+    <Project Path="src/SmartPlatform.Api/SmartPlatform.Api.csproj" />
+    <Project Path="src/SmartPlatform.Application/SmartPlatform.Application.csproj" />
+    <Project Path="src/SmartPlatform.Domain/SmartPlatform.Domain.csproj" />
+    <Project Path="src/SmartPlatform.Infrastructure/SmartPlatform.Infrastructure.csproj" />
+    <Project Path="src/SmartPlatform.Shared/SmartPlatform.Shared.csproj" />
+    <Project Path="src/SmartPlatform.Worker/SmartPlatform.Worker.csproj" />
+  </Folder>
 </Solution>
