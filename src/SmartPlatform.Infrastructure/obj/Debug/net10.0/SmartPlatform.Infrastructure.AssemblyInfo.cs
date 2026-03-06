@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartPlatform.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+085de48d2c8204605eb020567791d2ba4e6bf3d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e774505ef8d38d4ced949671380dfa7c905fa0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartPlatform.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartPlatform.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
