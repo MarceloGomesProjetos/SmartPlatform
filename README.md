@@ -1,27 +1,42 @@
 # SmartPlatform
 
-## Descrição
+## Overview
 
-O **SmartPlatform** é uma plataforma backend moderna e escalável desenvolvida com **.NET**, projetada para suportar aplicações distribuídas e de alta performance.
+**SmartPlatform** é uma plataforma backend moderna construída com **.NET** e projetada para suportar **sistemas distribuídos, orientados a eventos e altamente escaláveis**.
 
-A arquitetura segue princípios de **Domain-Driven Design (DDD)** e **Clean Architecture**, separando responsabilidades em camadas bem definidas para garantir:
+A plataforma segue princípios de:
 
-* Alta **manutenibilidade**
-* **Escalabilidade**
-* **Testabilidade**
-* Baixo **acoplamento**
+* **Domain-Driven Design (DDD)**
+* **Clean Architecture**
+* **Event-Driven Architecture**
+
+O objetivo é criar uma base sólida para aplicações que exigem:
+
+* alta **escalabilidade**
+* **baixo acoplamento**
+* **processamento assíncrono**
+* **observabilidade de eventos**
+* integração com **Inteligência Artificial**
+
+---
+
+# Principais Características
 
 A plataforma inclui:
 
-* Uma **API REST principal**
-* Um **Worker Service** para processamento assíncrono
-* Um módulo dedicado para **Inteligência Artificial**
+* API REST principal
+* Worker Service para processamento assíncrono
+* Sistema de **Domain Events**
+* **Event Store** para rastreamento de eventos
+* **Outbox Pattern** para integração confiável entre serviços
+* **Timeline de eventos do sistema**
+* Módulo dedicado para **Inteligência Artificial**
 
 ---
 
 # Arquitetura
 
-A solução está organizada em múltiplos projetos, cada um com responsabilidades bem definidas.
+A solução é organizada em múltiplos projetos com responsabilidades bem definidas.
 
 ```
 SmartPlatform
@@ -39,16 +54,21 @@ SmartPlatform
 └── SmartPlatform.Shared
 ```
 
-### SmartPlatform.Api
+---
 
-Camada de apresentação da aplicação.
+# Camadas da Aplicação
+
+## SmartPlatform.Api
+
+Camada de **apresentação da aplicação**.
 
 Responsável por:
 
 * Expor endpoints REST
 * Configurar middlewares
 * Gerenciar autenticação e autorização
-* Configuração da aplicação
+* Configuração de dependências
+* Inicialização da aplicação
 
 Tecnologia principal:
 
@@ -56,85 +76,92 @@ Tecnologia principal:
 
 ---
 
-### SmartPlatform.Application
+## SmartPlatform.Application
 
 Camada responsável pelos **casos de uso da aplicação**.
 
 Contém:
 
-* Interfaces de repositórios
-* Serviços de aplicação
+* Commands
+* Queries
 * DTOs
-* Regras de orquestração de negócios
+* Serviços de aplicação
+* Interfaces de repositórios
 
-Essa camada **não depende da infraestrutura**.
+Essa camada **não possui dependência da infraestrutura**.
 
 ---
 
-### SmartPlatform.Domain
+## SmartPlatform.Domain
 
-O núcleo da aplicação.
+O **núcleo do sistema**.
 
 Contém:
 
 * Entidades de domínio
 * Value Objects
-* Regras de negócio fundamentais
-* Interfaces de repositórios
+* Regras de negócio
+* Domain Events
+* Aggregate Roots
 
 Essa camada **não possui dependências externas**.
 
 ---
 
-### SmartPlatform.Infrastructure
+## SmartPlatform.Infrastructure
 
-Implementa os detalhes técnicos necessários para executar a aplicação.
+Camada responsável pelos **detalhes técnicos da aplicação**.
 
 Inclui:
 
-* Implementações de repositórios
+* Implementação de repositórios
+* Acesso ao banco de dados
+* Configuração do Entity Framework Core
+* Interceptadores do EF Core
+* Event Store
+* Outbox Pattern
+* Timeline de eventos do sistema
 * Integrações externas
-* Acesso a banco de dados
-* Configuração de ORM
 
 Tecnologias principais:
 
 * Entity Framework Core
+* PostgreSQL
 * Dapper
 
 ---
 
-### SmartPlatform.AI
+## SmartPlatform.AI
 
-Projeto dedicado a funcionalidades de **Inteligência Artificial**.
+Módulo dedicado a **funcionalidades de Inteligência Artificial**.
 
 Pode incluir:
 
 * Integração com APIs de IA
-* Serviços de análise de dados
-* Modelos de machine learning
-* Processamento de linguagem natural (NLP)
+* Processamento de linguagem natural
+* Sistemas de recomendação
+* Análise de dados
 
 ---
 
-### SmartPlatform.Worker
+## SmartPlatform.Worker
 
-Serviço de **processamento em segundo plano** baseado em Worker Service.
+Serviço responsável por **processamento em segundo plano**.
 
-Responsável por:
+Responsabilidades:
 
-* Processamento assíncrono
-* Filas de tarefas
-* Integrações externas
-* Processamentos pesados
+* Processamento de mensagens da Outbox
+* Integração com filas ou event bus
+* Processamentos assíncronos
+* Jobs de longa duração
 
 ---
 
-### SmartPlatform.Shared
+## SmartPlatform.Shared
 
-Projeto para **código reutilizável entre as camadas**.
+Projeto contendo **componentes reutilizáveis**.
 
-Pode incluir:
+Inclui:
 
 * Helpers
 * Extensions
@@ -143,13 +170,90 @@ Pode incluir:
 
 ---
 
+# Event-Driven Architecture
+
+A plataforma utiliza **Domain Events** para desacoplar regras de negócio e permitir evolução para arquiteturas distribuídas.
+
+Fluxo simplificado:
+
+```
+Domain Entity
+     │
+AddDomainEvent()
+     │
+DbContext.SaveChanges()
+     │
+EF Core SaveChangesInterceptor
+     │
+ ├── Event Store
+ ├── Outbox Messages
+ └── System Timeline
+```
+
+---
+
+# Event Store
+
+Todos os eventos de domínio podem ser armazenados em uma tabela de **Event Store**, permitindo:
+
+* auditoria completa
+* rastreamento de operações
+* replay de eventos
+* análise histórica do sistema
+
+---
+
+# Outbox Pattern
+
+Para garantir **consistência entre banco de dados e event bus**, o sistema utiliza o **Outbox Pattern**.
+
+Fluxo:
+
+```
+Domain Event
+     │
+Persistido na Outbox
+     │
+Worker Service
+     │
+Publicação em Event Bus
+```
+
+Isso evita problemas clássicos de:
+
+* mensagens perdidas
+* inconsistência entre serviços
+
+---
+
+# System Timeline
+
+O SmartPlatform mantém uma **timeline de eventos do sistema**, permitindo visualizar cronologicamente o que acontece na aplicação.
+
+Exemplo:
+
+```
+UserRegistered
+OrderCreated
+PaymentApproved
+AIRecommendationGenerated
+```
+
+Essa timeline pode ser utilizada para:
+
+* observabilidade
+* auditoria
+* dashboards operacionais
+
+---
+
 # Tecnologias Utilizadas
 
 * **.NET 10**
 * **ASP.NET Core**
 * **Entity Framework Core**
+* **PostgreSQL**
 * **Dapper**
-* **SQL Server**
 
 ---
 
@@ -157,8 +261,9 @@ Pode incluir:
 
 ## Pré-requisitos
 
-* [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
-* [SQL Server](https://www.microsoft.com/sql-server/sql-server-downloads)
+* .NET 10 SDK
+* Docker (opcional)
+* PostgreSQL
 
 ---
 
@@ -181,31 +286,29 @@ dotnet restore
 
 # Configuração
 
-Configure a string de conexão no arquivo:
+Configure a string de conexão em:
 
 ```
 SmartPlatform.Api/appsettings.json
-```
-
-e
-
-```
-SmartPlatform.Worker/appsettings.json
 ```
 
 Exemplo:
 
 ```
 "ConnectionStrings": {
-  "DefaultConnection": "Server=SEU_SERVIDOR;Database=SmartPlatformDb;User Id=SEU_USUARIO;Password=SUA_SENHA;"
+  "DefaultConnection": "Host=localhost;Database=SmartPlatformDb;Username=postgres;Password=postgrespw"
 }
 ```
 
 ---
 
-# Migração do Banco de Dados
+# Migrações do Banco
 
-Se estiver utilizando **Entity Framework Core**, execute:
+```
+dotnet ef migrations add InitialCreate --project SmartPlatform.Infrastructure
+```
+
+Aplicar:
 
 ```
 dotnet ef database update --project SmartPlatform.Infrastructure
@@ -213,9 +316,7 @@ dotnet ef database update --project SmartPlatform.Infrastructure
 
 ---
 
-# Executando a Aplicação
-
-## Executar a API
+# Executando a API
 
 ```
 dotnet run --project SmartPlatform.Api
@@ -227,15 +328,9 @@ A API estará disponível em:
 https://localhost:5001
 ```
 
-ou
-
-```
-http://localhost:5000
-```
-
 ---
 
-## Executar o Worker
+# Executando o Worker
 
 ```
 dotnet run --project SmartPlatform.Worker
@@ -243,14 +338,49 @@ dotnet run --project SmartPlatform.Worker
 
 ---
 
-# Contribuição
+# Roadmap
 
-Pull requests são bem-vindos.
+Funcionalidades planejadas:
 
-Para mudanças maiores, abra uma **issue** primeiro para discutirmos a proposta.
+* Event Bus (Kafka / RabbitMQ)
+* Observabilidade com OpenTelemetry
+* Dashboard de eventos do sistema
+* Integração avançada com IA
+* Sistema de automação baseado em eventos
 
 ---
 
 # Licença
 
-Este projeto está licenciado sob a licença **MIT**.
+Este projeto está licenciado sob a **MIT License**.
+
+---
+
+💡 **Minha recomendação técnica para você**
+
+Esse README já está **no nível de projetos open-source profissionais**.
+
+Mas existe **uma melhoria que faz muita diferença visual em repositórios**:
+
+Adicionar um **diagrama de arquitetura** logo no topo.
+
+Algo assim:
+
+```
+Client
+   │
+   ▼
+API
+   │
+Application Layer
+   │
+Domain
+   │
+Infrastructure
+   │
+PostgreSQL
+   │
+Outbox → Worker → Event Bus
+```
+
+Se quiser, eu também posso te montar **um diagrama de arquitetura bem bonito (estilo arquitetura da Netflix/AWS)** para colocar no README do SmartPlatform. Isso valoriza muito o projeto.
