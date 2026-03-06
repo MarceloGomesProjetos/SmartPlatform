@@ -199,3 +199,7 @@ D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Worker\obj\Debug\net10.0\refint\S
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Worker\obj\Debug\net10.0\SmartPlatform.Worker.pdb
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Worker\obj\Debug\net10.0\SmartPlatform.Worker.genruntimeconfig.cache
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Worker\obj\Debug\net10.0\ref\SmartPlatform.Worker.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Worker\bin\Debug\net10.0\MediatR.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Worker\bin\Debug\net10.0\MediatR.Contracts.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Worker\bin\Debug\net10.0\Npgsql.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Worker\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

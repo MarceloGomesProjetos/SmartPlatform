@@ -21,3 +21,4 @@ D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Domain\obj\Debug\net10.0\SmartPla
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Domain\obj\Debug\net10.0\refint\SmartPlatform.Domain.dll
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Domain\obj\Debug\net10.0\SmartPlatform.Domain.pdb
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Domain\obj\Debug\net10.0\ref\SmartPlatform.Domain.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Domain\obj\Debug\net10.0\SmartPlatform.Domain.csproj.AssemblyReference.cache

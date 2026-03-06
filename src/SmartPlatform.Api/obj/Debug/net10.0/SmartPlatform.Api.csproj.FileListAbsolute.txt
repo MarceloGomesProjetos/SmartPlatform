@@ -171,3 +171,7 @@ D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Api\obj\Debug\net10.0\refint\Smar
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Api\obj\Debug\net10.0\SmartPlatform.Api.pdb
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Api\obj\Debug\net10.0\SmartPlatform.Api.genruntimeconfig.cache
 D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Api\obj\Debug\net10.0\ref\SmartPlatform.Api.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Api\bin\Debug\net10.0\MediatR.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Api\bin\Debug\net10.0\MediatR.Contracts.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Api\bin\Debug\net10.0\Npgsql.dll
+D:\ProjetosNet\SmartPlatform\src\SmartPlatform.Api\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
