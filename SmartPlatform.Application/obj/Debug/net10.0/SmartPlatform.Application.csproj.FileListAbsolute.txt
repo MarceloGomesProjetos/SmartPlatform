@@ -1,0 +1,15 @@
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\bin\Debug\net10.0\SmartPlatform.Application.deps.json
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\bin\Debug\net10.0\SmartPlatform.Application.dll
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\bin\Debug\net10.0\SmartPlatform.Application.pdb
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\SmartPlatform.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\SmartPlatform.Application.AssemblyInfoInputs.cache
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\SmartPlatform.Application.AssemblyInfo.cs
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\SmartPlatform.Application.csproj.CoreCompileInputs.cache
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\SmartPlatform.Application.dll
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\refint\SmartPlatform.Application.dll
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\SmartPlatform.Application.pdb
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\ref\SmartPlatform.Application.dll
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\bin\Debug\net10.0\SmartPlatform.Domain.dll
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\bin\Debug\net10.0\SmartPlatform.Domain.pdb
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\SmartPlatform.Application.csproj.AssemblyReference.cache
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Application\obj\Debug\net10.0\SmartPla.635A7586.Up2Date

@@ -1,0 +1,11 @@
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\bin\Debug\net10.0\SmartPlatform.Shared.deps.json
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\bin\Debug\net10.0\SmartPlatform.Shared.dll
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\bin\Debug\net10.0\SmartPlatform.Shared.pdb
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\obj\Debug\net10.0\SmartPlatform.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\obj\Debug\net10.0\SmartPlatform.Shared.AssemblyInfoInputs.cache
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\obj\Debug\net10.0\SmartPlatform.Shared.AssemblyInfo.cs
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\obj\Debug\net10.0\SmartPlatform.Shared.csproj.CoreCompileInputs.cache
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\obj\Debug\net10.0\SmartPlatform.Shared.dll
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\obj\Debug\net10.0\refint\SmartPlatform.Shared.dll
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\obj\Debug\net10.0\SmartPlatform.Shared.pdb
+D:\ProjetosNet\SmartPlatform\SmartPlatform.Shared\obj\Debug\net10.0\ref\SmartPlatform.Shared.dll

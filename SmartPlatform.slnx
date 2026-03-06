@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="SmartPlatform.AI/SmartPlatform.AI.csproj" />
+  <Project Path="SmartPlatform.Api/SmartPlatform.Api.csproj" />
+  <Project Path="SmartPlatform.Application/SmartPlatform.Application.csproj" />
+  <Project Path="SmartPlatform.Domain/SmartPlatform.Domain.csproj" />
+  <Project Path="SmartPlatform.Infrastructure/SmartPlatform.Infrastructure.csproj" />
+  <Project Path="SmartPlatform.Shared/SmartPlatform.Shared.csproj" />
+  <Project Path="SmartPlatform.Worker/SmartPlatform.Worker.csproj" />
+</Solution>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SmartPlatform.Domain/1.0.0": {
+        "runtime": {
+          "SmartPlatform.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SmartPlatform.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ProjetosNet\\SmartPlatform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96860F58-AB31-3884-1A2B-4E7A4D17C3C4}|SmartPlatform.Infrastructure\\SmartPlatform.Infrastructure.csproj|d:\\projetosnet\\smartplatform\\smartplatform.infrastructure\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96860F58-AB31-3884-1A2B-4E7A4D17C3C4}|SmartPlatform.Infrastructure\\SmartPlatform.Infrastructure.csproj|solutionrelative:smartplatform.infrastructure\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96860F58-AB31-3884-1A2B-4E7A4D17C3C4}|SmartPlatform.Infrastructure\\SmartPlatform.Infrastructure.csproj|d:\\projetosnet\\smartplatform\\smartplatform.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96860F58-AB31-3884-1A2B-4E7A4D17C3C4}|SmartPlatform.Infrastructure\\SmartPlatform.Infrastructure.csproj|solutionrelative:smartplatform.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96860F58-AB31-3884-1A2B-4E7A4D17C3C4}|SmartPlatform.Infrastructure\\SmartPlatform.Infrastructure.csproj|d:\\projetosnet\\smartplatform\\smartplatform.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96860F58-AB31-3884-1A2B-4E7A4D17C3C4}|SmartPlatform.Infrastructure\\SmartPlatform.Infrastructure.csproj|solutionrelative:smartplatform.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96860F58-AB31-3884-1A2B-4E7A4D17C3C4}|SmartPlatform.Infrastructure\\SmartPlatform.Infrastructure.csproj|d:\\projetosnet\\smartplatform\\smartplatform.infrastructure\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96860F58-AB31-3884-1A2B-4E7A4D17C3C4}|SmartPlatform.Infrastructure\\SmartPlatform.Infrastructure.csproj|solutionrelative:smartplatform.infrastructure\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\ProjetosNet\\SmartPlatform\\SmartPlatform.Infrastructure\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "SmartPlatform.Infrastructure\\Repositories\\IUserRepository.cs",
+              "ToolTip": "D:\\ProjetosNet\\SmartPlatform\\SmartPlatform.Infrastructure\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "SmartPlatform.Infrastructure\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T15:45:26.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\ProjetosNet\\SmartPlatform\\SmartPlatform.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SmartPlatform.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\ProjetosNet\\SmartPlatform\\SmartPlatform.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "SmartPlatform.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T15:44:30.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ProjetosNet\\SmartPlatform\\SmartPlatform.Infrastructure\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "SmartPlatform.Infrastructure\\Entities\\User.cs",
+              "ToolTip": "D:\\ProjetosNet\\SmartPlatform\\SmartPlatform.Infrastructure\\Entities\\User.cs",
+              "RelativeToolTip": "SmartPlatform.Infrastructure\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T15:43:33.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\ProjetosNet\\SmartPlatform\\SmartPlatform.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SmartPlatform.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\ProjetosNet\\SmartPlatform\\SmartPlatform.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "SmartPlatform.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T15:40:49.587Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
