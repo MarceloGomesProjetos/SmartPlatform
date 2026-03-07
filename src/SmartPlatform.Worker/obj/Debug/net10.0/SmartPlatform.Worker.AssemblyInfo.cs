@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartPlatform.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+085de48d2c8204605eb020567791d2ba4e6bf3d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d99dfa53c78a7f7b83ab35bbb1ca29bba6605155")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartPlatform.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartPlatform.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
