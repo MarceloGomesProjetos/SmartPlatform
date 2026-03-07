@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartPlatform.AI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d99dfa53c78a7f7b83ab35bbb1ca29bba6605155")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f90fe5d2b2ca34c8de53c523909d4ee9fabada9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartPlatform.AI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartPlatform.AI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
